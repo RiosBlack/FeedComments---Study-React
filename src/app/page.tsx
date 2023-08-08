@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { FiCoffee } from "react-icons/fi";
 import Sidebar from './components/Sidebar';
+import Post from './components/Post';
 
 
 
@@ -11,10 +12,10 @@ export default function Home() {
         <FiCoffee className='mr-4 h-7 w-7' />
         <p className='font-bold text-2xl'>Coffee Talks</p>
       </header>
-      <main>
+      <main className='flex'>
         <Sidebar />
         <body>
-          
+          <Post />
         </body>
       </main>
     </div>
