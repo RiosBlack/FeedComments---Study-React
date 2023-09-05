@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Comments from "./Comments";
 
 type Props = {};
 
@@ -40,6 +41,18 @@ export default function Post({}: Props) {
           cumque veniam neque accusamus repellat totam, architecto at illo
           expedita eos nulla beatae? Atque nemo dolores molestiae nisi distinctio.
           Suscipit.
+        </div>
+        <form className="grid space-y-2 border-t-2 border-stone-600 mt-5">
+          <strong className="mt-5">
+            Deixe seu feedback
+          </strong>
+          <textarea placeholder="Deixe seu comentário" className="resize-none rounded-md p-2 text-slate-900"/>
+          <button className=" bg-orange-400 w-20 rounded-md font-bold text-stone-900 hover:bg-stone-700">Comentar</button>
+        </form>
+        <div className="mt-2">
+          <Comments />
+          <Comments />
+          <Comments />
         </div>
       </div>
     </article>
