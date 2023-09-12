@@ -29,12 +29,12 @@ export default function Comments({}: Props) {
               title="10 de janeiro às 15:40h"
               dateTime="2022-01-10 15:40:00"
               suppressHydrationWarning
-              className="text-orange-400"
+              className="text-orange-400 text-sm"
               >
                 Cerca de 1 hora atrás
               </time>
             </div>
-            <p>Comentário</p>
+            <p className="mt-2 text-lg">Comentário</p>
           </div>
       </div>
       <button className="flex space-x-2 items-center ml-16 mt-2 font-bold text-stone-600 hover:text-stone-400">

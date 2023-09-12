@@ -2,9 +2,15 @@ import Image from "next/image";
 import React from "react";
 import Comments from "./Comments";
 
-type Props = {};
+type Props = {
+  author: string;
+  content: string;
+  publishedAt: Date;
+};
 
-export default function Post({}: Props) {
+export default function Post({author, content, publishedAt}: Props) {
+  console.log(author);
+  
   return (
     <article className="grid content-center justify-items-center">
       <header className="w-full">
@@ -46,7 +52,7 @@ export default function Post({}: Props) {
           <strong className="mt-5">
             Deixe seu feedback
           </strong>
-          <textarea placeholder="Deixe seu comentário" className="resize-none rounded-md p-2 text-slate-900"/>
+          <textarea placeholder="Deixe seu comentário" className="resize-none rounded-md p-2 text-slate-900 bg-slate-100"/>
           <button className=" bg-orange-400 w-20 rounded-md font-bold text-stone-900 hover:bg-stone-700">Comentar</button>
         </form>
         <div className="mt-2">
